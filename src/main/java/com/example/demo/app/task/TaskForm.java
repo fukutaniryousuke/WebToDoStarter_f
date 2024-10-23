@@ -15,7 +15,7 @@ public class TaskForm {
 	private int typeId;
 
 	@NotBlank(message = "タイトルを入力してください。")
-	@Size
+	@Size(min = 1, max = 20, message = "20文字以内で入力してください")
 	private String title;
 
 	@NotBlank(message = "内容を入力してください。")
